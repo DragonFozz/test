@@ -6,13 +6,14 @@
 // english language = 'EN'
 
 let tryAgainAvailable = false
-let LANGUAGE_OPTION = 'FR'
+let LANGUAGE_OPTION = 'DK'
 
 import TRANSLATIONS from './language.js'
 import { $, delay, playSound } from './helpers.js'
 import { doPuzzle } from './puzzle-handler.js'
 import {trMisc as tr} from './translator.js'
-
+import { generateRandomPuzzle, generateQuestionAndAnswer, generate4} from './puzzle-factory.js'
+import { getPuzzleSvg } from './svg-factory.js'
 
 // runs on site load and handles entire  flow
 async function start(){
@@ -41,9 +42,15 @@ async function start(){
     let submitted
     let answer
     let result = true
-
+    const test = generate4()
+    
+    console.log("test")
+    console.log(test)
+    const puzzles = [...Array(4)].map(() => generateRandomPuzzle())
+    console.log(puzzles)
     for (let i = 0; i < 4 && result; i++) {
-        [submitted, answer] = await doPuzzle()
+
+        [submitted, answer] = await doPuzzle(test,i)
         result = (submitted?.toLowerCase() == answer)
     }
 

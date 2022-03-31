@@ -30,6 +30,36 @@ export default
             "Puzzle time"
         ]
     },
+    DK : {
+        COLORS : ['sort', 'turkis', 'blå', 'rød', 'gul', 'orange', 'grøn', 'lilla'],
+        SHAPES : ["square", "triangle", "rectangle", "circle"],
+        QUESTIONS : [
+            'background color',
+            'color text background color',
+            'shape text background color',
+            'number color',
+            'shape color',
+            'color text',
+            'shape text',
+            'shape'
+        ],
+        MISC : [
+            'AND', 
+            'Too fast? Practice by changing the puzzle time!',
+            'ESTABLISHING CONNECTION',
+            'DOING SOME HACKERMANS STUFF...',
+            'ACCESS CODE FLAGGED; REQUIRES HUMAN CAPTCHA INPUT..',
+            'the system has been bypassed.',
+            "The system didn't accept your answers",
+            "the answer was",
+            "Good job, ",
+            "The time ran out,",
+            "You wrote",
+            "Try again",
+            "Puzzle amount",
+            "Puzzle time"
+        ]
+    },
     NO : {
         COLORS : ['svart', 'hvit', 'blå', 'rød', 'gul', 'oransje', 'grønn', 'lilla'],
         SHAPES : ["firkant", "trekant", "rektangel", "sirkel"],
