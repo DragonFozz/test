@@ -8,11 +8,11 @@ let selectedLang = localStorage.getItem('lang') || 'DK'
 // if(!Object.keys(TRANSLATIONS).includes(selectedLang)) console.log(`LANGUAGE NOT SUPPORTED\nSELECTED: ${selectedLang}\nAVAILABLE: ${TRANSLATIONS.LANGUAGES}`)
 let LANG = TRANSLATIONS[selectedLang]
 
-
+//"square", "triangle", "rectangle","circle",
 document.addEventListener("lang", () => console.log("LANG CHANGED" + localStorage.getItem('lang')))
 document.addEventListener("lang", () => LANG = TRANSLATIONS[localStorage.getItem('lang')])
 
-const SHAPES = ["square", "triangle", "rectangle", "circle"]
+const SHAPES = [  "turnonoff", "harddrive","network","download"]
 const COLORABLE = ['background', 'colortext', 'shapetext', 'number', 'shape']
 
 
