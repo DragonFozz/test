@@ -44,7 +44,7 @@ export async function doPuzzle(ps, counter){
     //console.log(answer)
     console.log(nums)
     if(counter == 0){ 
-    await displayNumbers(puzzles)
+    await displayNumbers(puzzles,counter)
     }
     //const metronome = (puzzleTime == 7) ? playSound('assets/metronome.mp3') : playSound('assets/long-metronome.mp3')
 
@@ -102,7 +102,7 @@ export async function doPuzzle(ps, counter){
 }
 
 
-async function displayNumbers(puzzles){
+async function displayNumbers(puzzles,counter){
 
     const tempnums = [0,1,2,3];
     const shuffledArray = tempnums.sort((a, b) => 0.5 - Math.random());
@@ -131,7 +131,9 @@ async function displayNumbers(puzzles){
  
     //numbers.forEach((n, i) => $('#square-' + (i+1)).innerHTML = `<div class="big-numbers can-shrink" id="num-${i+1}">${n}</div>`)
 
-    await delay(2)
+    if(counter == 0){
+        await delay(2)
+    }
     //numbers.forEach(n => $('#num-' + (n)).classList.add('number-shrink'))
     await delay(2)
 }
