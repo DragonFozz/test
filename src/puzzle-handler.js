@@ -6,7 +6,7 @@ import { translatePuzzle, translateQA } from './translator.js'
 const progressBar = $('.answer-progress-bar')
 const inputElement = $('.answer-input')
 
-let puzzleTime = 3
+let puzzleTime = 2
 let puzzleAmount = 4
 
 // handles generating puzzle and returning result
