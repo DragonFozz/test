@@ -132,17 +132,20 @@ async function displayNumbers(puzzles,counter){
     //numbers.forEach((n, i) => $('#square-' + (i+1)).innerHTML = `<div class="big-numbers can-shrink" id="num-${i+1}">${n}</div>`)
 
     if(counter == 0){
-        await delay(2)
+        await delay(4)
     }
     //numbers.forEach(n => $('#num-' + (n)).classList.add('number-shrink'))
-    await delay(2)
+    if(counter > 0){
+        await delay(puzzleTime)
+    }
+    
 }
 
 // puzzle time settins
 const timeRange = $('#speed-control')
-const puzzleRange = $('#puzzle-control')
+
 timeRange.addEventListener('input', () => puzzleTime = $('.time-display').textContent = timeRange.value)
-puzzleRange.addEventListener('input', () => puzzleAmount = $('.puzzle-display').textContent = parseInt(puzzleRange.value))
+
 
 
 
