@@ -38,7 +38,7 @@ $('#to-fast').innerText = trMisc('Too fast? Practice by changing the puzzle time
 $('#answer-was').innerText = trMisc('the answer was')
 $('#try-again-button').innerText = trMisc('Try again')
 
-$('#puzzle-amount').innerText = trMisc('Puzzle amount')
+// $('#puzzle-amount').innerText = trMisc('Puzzle amount')
 $('#puzzle-time').innerText = trMisc('Puzzle time')
 $('#answer-placeholder').setAttribute('placeholder', trPuzzle('blue') + ' ' + trPuzzle('square'))
 
