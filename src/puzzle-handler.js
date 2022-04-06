@@ -135,12 +135,12 @@ async function displayNumbers(puzzles,counter){
         await delay(2)
     }
     //numbers.forEach(n => $('#num-' + (n)).classList.add('number-shrink'))
-    await delay(puzzleTime)
+    await delay(2)
 }
 
 // puzzle time settins
 const timeRange = $('#speed-control')
-const puzzleRange = 4
+const puzzleRange = $('#puzzle-control')
 timeRange.addEventListener('input', () => puzzleTime = $('.time-display').textContent = timeRange.value)
 puzzleRange.addEventListener('input', () => puzzleAmount = $('.puzzle-display').textContent = parseInt(puzzleRange.value))
 
