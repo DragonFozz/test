@@ -12,7 +12,7 @@ let LANG = TRANSLATIONS[selectedLang]
 document.addEventListener("lang", () => console.log("LANG CHANGED" + localStorage.getItem('lang')))
 document.addEventListener("lang", () => LANG = TRANSLATIONS[localStorage.getItem('lang')])
 
-const SHAPES = [  "turnonoff", "harddrive","network","download"]
+const SHAPES = [  "turnonoff", "harddrive","network","download","servers", "threeservers"]
 const COLORABLE = ['background', 'colortext', 'shapetext', 'number', 'shape']
 
 
