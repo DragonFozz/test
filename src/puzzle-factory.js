@@ -16,12 +16,11 @@ const SHAPES = [  "turnonoff", "harddrive","network","download","servers", "thre
 const COLORABLE = ['background', 'colortext', 'shapetext', 'number', 'shape']
 
 
-const COLOR_CODES = ['#000000', '#3f888f','#00008B','#7b0100','#fceb3d','#fd9802','#4cae4f','#9926ac0']
+const COLOR_CODES = ['#3f888f','#00008B','#7b0100','#fceb3d','#fd9802','#4cae4f','#9926ac0']
 
 const LANG_COLORS = LANG.COLORS.reduce((obj, key, i) => {obj[key] = COLOR_CODES[i]; return obj}, {})
 
 export const COLORS = {
-    'sort' : '#000000',
     'turkis' : '#3f888f', 
     'blå' : '#00008B',
     'rød' : '#7b0100',
