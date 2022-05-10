@@ -19,13 +19,7 @@ const COLORABLE = ['background', 'colortext', 'shapetext', 'number', 'shape']
 const COLOR_CODES = ['#3f888f','#00008B','#7b0100','#fceb3d','#fd9802','#4cae4f','#9926ac0']
 
 const LANG_COLORS = LANG.COLORS.reduce((obj, key, i) => {obj[key] = COLOR_CODES[i]; return obj}, {})
-ConnectedColors["blue"] = "#3059EC";
-ConnectedColors["green"] = "#30EC7B";
-ConnectedColors["red"] = "#EC3030";
-ConnectedColors["yellow"] = "#DDEC30";
-ConnectedColors["orange"] = "#EC6830";
-ConnectedColors["cyan"] = "#30ECCA";
-ConnectedColors["purple"] = "#8330EC";
+
 export const COLORS = {
     'cyan' : '#30ECCA', 
     'blå' : '#3059EC',
